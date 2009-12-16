@@ -1,0 +1,16 @@
+Makefile.PL
+MANIFEST
+lib/Object/Wrapper.pm
+lib/Object/Wrapper/Fork.pm
+lib/Object/Wrapper/Fork/DBI.pm
+t/00-Object-Wrapper-Fork-DBI.t
+t/00-Object-Wrapper-Fork.t
+t/00-Object-Wrapper.t
+t/01-autoload.t
+t/02-cleanup.t
+t/03-diff-pid.t
+t/04-fork.t
+t/05-fork-fails.t
+t/06-trampoline.t
+t/generic_00_t
+META.yml                                 Module meta-data (added by MakeMaker)

@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Object-Wrapper
-version:            0.03
+version:            0.04
 abstract:           Sanity-check wrapper for objects.
 author:
     - Steven Lembark <lembark@wrkhors.com>

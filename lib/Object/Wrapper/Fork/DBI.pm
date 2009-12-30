@@ -6,16 +6,18 @@ package Object::Wrapper::Fork::DBI;
 
 use 5.8.0;
 use strict;
-use parent qw( Object::Wrapper::Fork );
+use parent  qw( Object::Wrapper::Fork );
 
 use Carp;
-use DBI;
+
+eval { use DBI; 1 }
+or carp __PACKAGE__ . ' failed using DBI';
 
 ########################################################################
-# package variables
+# package variables & sanity checks
 ########################################################################
 
-our $VERSION    = 0.02;
+our $VERSION    = 0.03;
 
 ########################################################################
 # utility subs
@@ -27,6 +29,8 @@ our $VERSION    = 0.02;
 
 sub connect
 {
+    # discard the object/class: this is a factory.
+
     shift;
 
     my $dbh     = DBI->connect( @_ )

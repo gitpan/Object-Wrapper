@@ -29,7 +29,7 @@ if( my $pid = fork )
 {
         wait;
 
-        ok ! $exit, "Child exited cleanly ($_)";
+        ok ! $exit, "Child exited cleanly ($pid)";
 }
 elsif( defined $pid )
 {

@@ -3,6 +3,7 @@ MANIFEST
 lib/Object/Wrapper.pm
 lib/Object/Wrapper/Fork.pm
 lib/Object/Wrapper/Fork/DBI.pm
+lib/Object/Wrapper/Fork/DBI_stubs.pm
 t/00-Object-Wrapper-Fork-DBI.t
 t/00-Object-Wrapper-Fork.t
 t/00-Object-Wrapper.t

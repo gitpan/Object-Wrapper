@@ -13,7 +13,17 @@ $base       =~ s{ \d+ \W }{}x;
 
 my $module  = join '::', split /\W+/, $base;
 
+my @required
+= qw
+(
+    new
+    cleanup_handler
+);
+
 plan tests => 1 + @_;
+
+# note that this will carp if DBI is not present,
+# but won't fail.
 
 use_ok $module;
 

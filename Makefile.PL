@@ -9,7 +9,7 @@ WriteMakefile
     # of Parallel::Depend but may change due to 
     # documentation or ::Util updates.
 
-    VERSION         => 0.03,
+    VERSION         => 0.04,
     ABSTRACT_FROM   => './lib/Object/Wrapper.pm',
 
 	AUTHOR     	=> 'Steven Lembark <lembark@wrkhors.com>',

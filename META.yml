@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Object-Wrapper
-version:            0.04
+version:            0.05
 abstract:           Sanity-check wrapper for objects.
 author:
     - Steven Lembark <lembark@wrkhors.com>
@@ -12,6 +12,7 @@ build_requires:
     ExtUtils::MakeMaker:  0
 requires:
     Carp:          0
+    if:            0
     parent:        0.2
     Scalar::Util:  0
     strict:        0

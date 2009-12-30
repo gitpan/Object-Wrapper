@@ -9,7 +9,7 @@ WriteMakefile
     # of Parallel::Depend but may change due to 
     # documentation or ::Util updates.
 
-    VERSION         => 0.04,
+    VERSION         => 0.05,
     ABSTRACT_FROM   => './lib/Object/Wrapper.pm',
 
 	AUTHOR     	=> 'Steven Lembark <lembark@wrkhors.com>',
@@ -18,7 +18,9 @@ WriteMakefile
         # core modules: whatever came with perl
         # should be usable
 
+        if              => 0,
         strict          => 0,
+
         Scalar::Util    => 0,
         Symbol          => 0,
         Carp            => 0,

@@ -10,8 +10,9 @@ use parent  qw( Object::Wrapper::Fork );
 
 use Carp;
 
-eval { use DBI; 1 }
-or carp __PACKAGE__ . ' failed using DBI';
+eval { require DBI };
+
+use if ! $DBI::VERSION, 'Object::Wrapper::Fork::DBI_stubs';
 
 ########################################################################
 # package variables & sanity checks

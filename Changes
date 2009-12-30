@@ -1,0 +1,7 @@
+
+- 0.05 Wed Dec 30 10:35:04 EST 2009
+
+Added Object::Wrapper::Fork::DBI_stubs. This installs 
+booby-trapped connect and connect_cached subs into 
+O::W::F::DBI if DBI is not available. This avoids the need 
+for a copy of DBI to be installed for testing.
